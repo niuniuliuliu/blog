@@ -1,0 +1,26 @@
+.Header {
+    padding: 1rem 0 4rem;
+    text-align: center;
+    width: 100%;
+    font-size: 8rem;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom: 2px solid #eee;
+}
+
+.Header p {
+    font-size: 1.4rem;
+    color: #555;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .Header {
+        font-size: 8rem;
+    }
+}

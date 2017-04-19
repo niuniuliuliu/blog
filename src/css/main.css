@@ -1,0 +1,163 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+}
+
+::selection {
+    background: #002332;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 20px 0 15px;
+}
+
+h1 {
+    font-size: 2.2rem
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.8rem
+    }
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 767px) {
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+h4 {
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+    h6 {
+        font-size: 0.8rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.4rem;
+    max-width: 75rem;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+.btn-black {
+    color: #ffffff;
+    background: #222;
+}
+
+.btn-black:hover, .btn-black:active, .btn-black:focus {
+    color: #222;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+}
+
+.load-more {
+    margin-top: 10px;
+}
+
+.load-more a {
+    width: 100%;
+    color: #666699;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.load-more a:hover {
+    background: #eee;
+}
+
+.load-more a:active {
+    position: relative;
+    top: 2px;
+}

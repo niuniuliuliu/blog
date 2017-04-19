@@ -1,0 +1,63 @@
+#Menu {
+    position: fixed;
+    top: 4rem;
+    right: 3rem;
+    z-index: 50;
+}
+
+#Menu .fa-bars {
+    font-size: 2rem;
+    color: #000;
+}
+
+#Menu #MenuButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, .9);
+    border-radius: 2px;
+    border: 1px solid transparent;
+    z-index: 5;
+}
+
+#Menu:hover #MenuButton {
+    border: 1px solid #efefef;
+    border-bottom: none;
+}
+
+#Menu:hover ul {
+    display: block;
+}
+
+#Menu ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin: 0;
+    border: 1px solid #efefef;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 18px 25px;
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 0 1px 3px 0 #eee;
+    min-width: 50px;
+}
+
+#Menu ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#Menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 0;
+    color: inherit;
+    /*font-size: 1.2rem;*/
+}
+
+#Menu ul li a:hover {
+    text-decoration: underline;
+}

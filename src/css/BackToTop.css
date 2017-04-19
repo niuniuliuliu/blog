@@ -1,0 +1,12 @@
+#BackToTop {
+    position: fixed;
+    bottom: 8rem;
+    right: 3rem;
+    z-index: 50;
+}
+
+#BackToTop .fa-arrow-circle-up {
+    cursor: pointer;
+    font-size: 3rem;
+    color: #000;
+}

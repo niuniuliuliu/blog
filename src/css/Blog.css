@@ -1,0 +1,65 @@
+.BlogSimple {
+    width: 100%;
+}
+
+.BlogSimple + .BlogSimple {
+    margin-top: 8rem;
+}
+
+.BlogHeader {
+    width: 100%;
+    text-align: center;
+    color: #555;
+    margin: 20px 0 50px 0;
+}
+
+.BlogHeader .BlogTitle {
+    text-align: center;
+    word-break: break-all;
+    font-weight: 400;
+    margin: 0 0 5px;
+}
+
+.BlogHeader .BlogTitle a {
+    line-height: 1.2;
+    color: #555;
+}
+
+.BlogHeader span {
+    color: #999;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.BlogHeader span.divider {
+    margin: 0 0.5rem;
+}
+
+.BlogContent {
+    width: 100%;
+}
+
+.BlogSimpleFooter {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.BlogFooter {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.BlogFooterNav {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BlogFooterNav a {
+    color: #555;
+}
+
+.BlogFooterNav a:hover, .BlogFooterNav a:active {
+    color: #000;
+}
