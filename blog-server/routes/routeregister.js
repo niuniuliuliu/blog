@@ -3,6 +3,9 @@
  */
 module.exports = function (app) {
     //index
-    var indexRoutes = require('./indexroute');
+    let indexRoutes = require('./indexroute');
     app.use('/api', indexRoutes);
+    //admin
+    let adminRoutes = require('./adminroute');
+    app.use('/api', adminRoutes);
 }

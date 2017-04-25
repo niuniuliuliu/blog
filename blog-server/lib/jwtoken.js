@@ -25,10 +25,10 @@ module.exports = function () {
                     audience: obj.audience,
                     issuer: obj.issuer
                 });
+            deferred.resolve(token);
         } else {
             deferred.reject('invalid username or password');
         }
-        deferred.resolve(token);
         return deferred.promise;
     };
     this.validateToken = function (token) {

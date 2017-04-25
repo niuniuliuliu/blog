@@ -3,10 +3,34 @@
     bottom: 8rem;
     right: 3rem;
     z-index: 50;
+    animation-name: BackToTopFrame;
+    -webkit-animation-name: BackToTopFrame;
+    -moz-animation-name: BackToTopFrame;
+    -o-animation-name: BackToTopFrame;
+    -ms-animation-name: BackToTopFrame;
+    animation-duration: 0.2s;
+    -wbekit-animation-duration: 0.2s;
+    -moz-animation-duration: 0.2s;
+    -o-animation-duration: 0.2s;
+    -ms-animation-duration: 0.2s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
 }
 
 #BackToTop .fa-arrow-circle-up {
     cursor: pointer;
     font-size: 3rem;
     color: #000;
+}
+
+@keyframes BackToTopFrame {
+    from {
+        bottom: 0rem;
+    }
+    to {
+        bottom: 8rem;
+    }
 }

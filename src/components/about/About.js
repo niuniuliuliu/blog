@@ -8,10 +8,11 @@ export default class About extends React.Component {
     render() {
         let content = `
 # 基本信息
-niuniuliuliu xxxxxx xxxxx xxxxxxx  
-xxxxxx       
+姓名:niuniuliuliu   
+职业:学生   
 # 联系方式
 ### [github](https://github.com/niuniuliuliu)
+# 个人介绍
         `;
         return (
             <div className="About">

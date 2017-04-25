@@ -15,6 +15,7 @@
     margin: 0 2px 2px 0;
     text-align: center;
     text-decoration: underline;
+    overflow: hidden;
 }
 
 .Category ul li:hover {

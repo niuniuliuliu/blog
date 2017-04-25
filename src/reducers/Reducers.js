@@ -2,10 +2,12 @@
  * Created by ck on 19/04/2017.
  */
 import {combineReducers} from 'redux';
-import CounterReducer from './CountReducer';
+import BlogReducer from './BlogReducer';
+import CategoryReducer from './CategoryReducer';
 
 const Reducers = combineReducers({
-    CounterReducer
+    BlogReducer,
+    CategoryReducer
 })
 
 export default Reducers;

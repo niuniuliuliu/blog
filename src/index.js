@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import './css/normalize.css';
@@ -18,54 +18,15 @@ import CategoryDetail from "./components/category/CategoryDetail";
 import Admin from "./components/admin/Admin";
 import AdminLogin from "./components/admin/AdminLogin";
 
-import {createStore} from 'redux';
-import {Provider, connect} from 'react-redux';
-import {INCREASE_ACTION} from './actions/CountAction';
+import {Provider} from 'react-redux';
 import {AppStore} from './stores/AppStore';
 
-// React component
-class Counter extends React.Component {
-    render() {
-        const {value, onIncreaseClick} = this.props
-        return (
-            <div>
-                <span>{value}</span>
-                <button onClick={onIncreaseClick}>Increase</button>
-            </div>
-        )
-    }
-}
-
-
-Counter.propTypes = {
-    value: PropTypes.number.isRequired,
-    onIncreaseClick: PropTypes.func.isRequired
-};
-
-// Map Redux state to component props
-function mapStateToProps(state) {
-    return {
-        value: state.CounterReducer.count
-    }
-}
-
-// Map Redux actions to component props
-function mapDispatchToProps(dispatch) {
-    return {
-        onIncreaseClick: () => dispatch(INCREASE_ACTION)
-    }
-}
-const AppCount = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Counter);
 
 ReactDOM.render(
     <Provider store={AppStore}>
         <div>
             <section id="topSection">
                 < Header />
-                <AppCount/>
             </section>
             <section id="middleSection">
                 <Router history={hashHistory}>

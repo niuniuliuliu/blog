@@ -1,5 +1,7 @@
 .About {
     line-height: 1.5;
+    width: 400px;
+    margin: 0 auto;
 }
 
 .About a {

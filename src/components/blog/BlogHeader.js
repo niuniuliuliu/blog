@@ -3,17 +3,23 @@
  */
 import React from 'react';
 import {Link} from 'react-router';
+import fecha from 'fecha';
+
 export default class BlogHeader extends React.Component {
 
     render() {
+        let date = new Date(this.props.creationDate);
+        let blogId = this.props.blogId;
+        let category = this.props.category;
+        let title = this.props.title;
         return (
             <div className="BlogHeader">
                 <h1 className="BlogTitle">
-                    <Link to="/blogDetail/11">{this.props.title}</Link>
+                    <Link to={`/blogDetail/${blogId}`}>{title}</Link>
                 </h1>
-                <span>发表于 2017年3月30日</span>
+                <span>{`发表于 ${fecha.format(date, 'YYYY年MM月DD日')}`}</span>
                 <span className="divider">|</span>
-                <span>分类 未知</span>
+                <span>{`分类 ${category}`}</span>
                 <span className="divider">|</span>
                 <span>阅读次数 1</span>
             </div>

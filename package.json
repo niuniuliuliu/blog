@@ -1,14 +1,18 @@
 {
-  "name": "my-react",
+  "name": "blog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fecha": "^2.3.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-markdown": "^2.4.6",
     "react-redux": "^5.0.4",
     "react-router": "^4.0.0",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.2",
+    "redux-promise": "^0.5.3",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

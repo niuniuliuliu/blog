@@ -6,9 +6,10 @@ import {Link} from 'react-router';
 export default class BlogSimpleFooter extends React.Component {
 
     render() {
+        let blogId = this.props.blogId;
         return (
             <div className="BlogSimpleFooter">
-                <Link className="btn btn-black" to="/blogDetail/11">查看全文</Link>
+                <Link className="btn btn-black" to={`/blogDetail/${blogId}`}>查看全文</Link>
             </div>
         );
     }

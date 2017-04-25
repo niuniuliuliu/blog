@@ -1,5 +1,11 @@
-.Admin{
-
+.Admin, .AdminLogin {
+    margin-top: 30px;
 }
 
+.Admin .abstract {
+    height: 100px;
+}
 
+.Admin .content {
+    height: 200px;
+}
