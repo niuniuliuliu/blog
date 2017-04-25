@@ -19,9 +19,9 @@ export default class BlogHeader extends React.Component {
                 </h1>
                 <span>{`发表于 ${fecha.format(date, 'YYYY年MM月DD日')}`}</span>
                 <span className="divider">|</span>
-                <span>{`分类 ${category}`}</span>
-                <span className="divider">|</span>
-                <span>阅读次数 1</span>
+                <span>分类 <Link to={`/categoryDetail/${category}`}>{category}</Link></span>
+                {/*<span className="divider">|</span>*/}
+                {/*<span>阅读次数 1</span>*/}
             </div>
         );
     }

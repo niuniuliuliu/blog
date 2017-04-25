@@ -9,3 +9,7 @@
 .Admin .content {
     height: 200px;
 }
+
+.Admin .BlogSearch i {
+    cursor: pointer;
+}

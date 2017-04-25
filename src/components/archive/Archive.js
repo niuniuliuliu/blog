@@ -22,7 +22,6 @@ export default class Archive extends React.Component {
     async getBlogs() {
         try {
             this.setState({loadStatus: 1});
-            let category = this.props.params.id;
             let response = await fetch(`${AppConst.API_URL}/blogs?pageIndex=${this.state.pageIndex}&pageSize=${this.state.pageSize}&rd=${Math.random()}`);
             let result = await response.json();
             if (result.code === 200) {

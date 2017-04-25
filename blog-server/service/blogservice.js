@@ -12,9 +12,12 @@ class BlogService {
         return deferred.promise;
     }
 
-    getBlogsPage(pageIndex, pageSize) {
+    getBlogsPage(pageIndex, pageSize, {condition = null} = {}) {
         let deferred = Q.defer();
-        mongo.findPage('blogs', pageIndex, pageSize, {sort: {creationDate: -1}}).then((result) => deferred.resolve(result), (err) => deferred.reject(err));
+        mongo.findPage('blogs', pageIndex, pageSize, {
+            sort: {creationDate: -1},
+            condition: condition
+        }).then((result) => deferred.resolve(result), (err) => deferred.reject(err));
         return deferred.promise;
     }
 
@@ -47,6 +50,23 @@ class BlogService {
             content: content,
             creationDate: creationDate
         }).then((result) => deferred.resolve(result), (err) => deferred.reject(err));
+        return deferred.promise;
+    }
+
+    updateBlog(id, {title = '', abstract = '', category = '', content = '', creationDate = new Date()} = {}) {
+        let deferred = Q.defer();
+        mongo.update('blogs', {
+            title: title,
+            abstract: abstract,
+            category: category,
+            content: content
+        }, {"_id": ObjectID(id)}).then((result) => deferred.resolve(result), (err) => deferred.reject(err));
+        return deferred.promise;
+    }
+
+    deleteBlog(id) {
+        let deferred = Q.defer();
+        mongo.delete('blogs', {"_id": ObjectID(id)}).then((result) => deferred.resolve(result), (err) => deferred.reject(err));
         return deferred.promise;
     }
 

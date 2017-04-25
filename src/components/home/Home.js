@@ -12,7 +12,7 @@ import {AppStore} from '../../stores/AppStore';
 class Home extends React.Component {
     componentDidMount() {
         if (AppStore.getState().BlogReducer.blogs.length === 0)
-            AppStore.dispatch(HOMELOAD_ACTION(1, 1));
+            AppStore.dispatch(HOMELOAD_ACTION(1, 10));
     }
 
     render() {
@@ -48,7 +48,7 @@ function mapDispatchToProps(dispatch) {
     return {
         onLoadClick: (pageIndex) => {
             dispatch(HOMELOADSTART_ACTION);
-            dispatch(HOMELOAD_ACTION(pageIndex, 1));
+            dispatch(HOMELOAD_ACTION(pageIndex, 10));
         }
     }
 }

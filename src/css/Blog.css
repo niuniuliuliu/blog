@@ -31,6 +31,10 @@
     text-align: center;
 }
 
+.BlogHeader span a {
+    color: #999;
+}
+
 .BlogHeader span.divider {
     margin: 0 0.5rem;
 }
