@@ -43,6 +43,16 @@
     width: 100%;
 }
 
+.BlogContent p {
+    line-height: 30px;
+    text-align: left;
+}
+
+.BlogContent img {
+    display: inline-block;
+    max-width: 100%;
+}
+
 .BlogSimpleFooter {
     margin-top: 3rem;
     text-align: center;
