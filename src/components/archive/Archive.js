@@ -12,7 +12,7 @@ import fecha from 'fecha';
 export default class Archive extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {blogs: [], pageIndex: 1, pageSize: 1, loadStatus: 0};
+        this.state = {blogs: [], pageIndex: 1, pageSize: 10, loadStatus: 0};
     }
 
     componentDidMount() {

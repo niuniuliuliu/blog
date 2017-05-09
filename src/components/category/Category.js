@@ -19,7 +19,7 @@ class Category extends React.Component {
             <div className="Category">
                 <ul>
                     {categorys.map((x) => {
-                        return <li key={x._id}><Link to={`/categoryDetail/${x._id}`}>{`${x._id}(${x.count})`}</Link>
+                        return <li key={x._id}><Link to={`/categoryDetail/${encodeURI(x._id)}`}>{`${x._id}(${x.count})`}</Link>
                         </li>
                     })}
                 </ul>

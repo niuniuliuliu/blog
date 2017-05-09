@@ -20,6 +20,13 @@
     -ms-animation-timing-function: linear;
 }
 
+@media (max-width: 767px) {
+    #BackToTop {
+        right: 1rem;
+        bottom: 5rem;
+    }
+}
+
 #BackToTop .fa-arrow-circle-up {
     cursor: pointer;
     font-size: 3rem;

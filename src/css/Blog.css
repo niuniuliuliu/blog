@@ -43,6 +43,17 @@
     width: 100%;
 }
 
+.BlogContent code {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5rem;
+    color: #333;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
 .BlogContent p {
     line-height: 30px;
     text-align: left;

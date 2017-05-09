@@ -21,7 +21,7 @@ import AdminLogin from "./components/admin/AdminLogin";
 import {Provider} from 'react-redux';
 import {AppStore} from './stores/AppStore';
 
-
+document.body.addEventListener('touchstart', function () { });
 ReactDOM.render(
     <Provider store={AppStore}>
         <div>
